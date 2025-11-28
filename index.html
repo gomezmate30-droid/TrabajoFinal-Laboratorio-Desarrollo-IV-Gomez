@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador Rick and Morty</title>
+    <script src="https://cdn.tailwindcss.com"></script> 
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col items-center py-10 px-4">
+    
+    <h1 class="text-4xl font-bold mb-6 text-green-400">Portal Rick and Morty</h1>
+
+    <div class="w-full max-w-md mb-8">
+        <div class="flex gap-2">
+            <input 
+                type="text" 
+                id="characterInput" 
+                placeholder="Ej: Rick, Morty, Summer..." 
+                class="flex-1 px-4 py-2 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-500" 
+            />
+            <button 
+                id="buscarBtn" 
+                class="bg-green-600 hover:bg-green-700 px-6 py-2 rounded-lg font-bold transition">
+                Buscar
+            </button>
+        </div>
+    </div>
+
+    <div id="resultado" class="text-center w-full max-w-sm">
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
